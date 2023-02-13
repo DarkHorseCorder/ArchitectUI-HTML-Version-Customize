@@ -1,0 +1,33 @@
+{{#> base }}
+{{> AppSidebar/sidebar forms-textarea-autosize=this }}
+<div class="app-main__outer">
+    <div class="app-main__inner">
+        {{> AppMain/page-title }}
+        <div class="row">
+            <div class="col-md-6">
+                <div class="main-card mb-3 card">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic</h5>
+                        <textarea rows="1" class="form-control autosize-input" style="height: 35px;"></textarea>
+                    </div>
+                </div>
+                <div class="main-card mb-3 card">
+                    <div class="card-body">
+                        <h5 class="card-title">Max Height</h5>
+                        <textarea rows="1" class="form-control autosize-input" style="max-height: 200px; height: 35px;">Just a single line...</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="main-card mb-3 card">
+                    <div class="card-body">
+                        <h5 class="card-title">With Min/Max Rows</h5>
+                        <textarea rows="1" class="form-control autosize-input" style="height: 77px;">Just a single line...</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{> AppFooter/footer }}
+</div>
+{{/ base }}

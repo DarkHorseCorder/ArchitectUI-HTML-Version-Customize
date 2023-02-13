@@ -1,0 +1,69 @@
+{{#> base }}
+    {{> AppSidebar/sidebar forms-toggle-switch=this }}
+    <div class="app-main__outer">
+        <div class="app-main__inner">
+            {{> AppMain/page-title }}
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Basic</h5>
+                            <input id="chkToggle1" type="checkbox" data-toggle="toggle" checked>
+                        </div>
+                    </div>
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Colors</h5>
+                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="primary">
+                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary">
+                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="danger">
+                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="warning">
+                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="info">
+                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="light">
+                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="dark">
+                        </div>
+                    </div>
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Color Mix</h5>
+                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="warning" data-offstyle="info">
+                        </div>
+                    </div>
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Content</h5>
+                            <input type="checkbox" checked data-toggle="toggle" data-on="Yes" data-off="No" data-onstyle="success" data-offstyle="danger">
+                            <input type="checkbox" checked data-toggle="toggle" data-on="<i class='fa fa-play'></i>" data-off="<i class='fa fa-pause'></i>">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sizing</h5>
+                            <input type="checkbox" checked data-toggle="toggle" data-size="normal">
+                            <input type="checkbox" checked data-toggle="toggle" data-size="small">
+                            <input type="checkbox" checked data-toggle="toggle" data-size="mini">
+                        </div>
+                    </div>
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Inline Toggles</h5>
+                            <div class="form-check form-check-inline">
+                                <input id="inlineCheckbox1" class="form-check-input" type="checkbox" data-toggle="toggle" data-style="me-1" checked>
+                                <label for="inlineCheckbox1" class="form-label form-check-label">Enabled</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input id="inlineCheckbox2" class="form-check-input" type="checkbox" data-toggle="toggle" data-style="me-1" disabled>
+                                <label for="inlineCheckbox2" class="form-label form-check-label">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{> AppFooter/footer }}
+    </div>
+{{/ base }}

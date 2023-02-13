@@ -1,0 +1,31 @@
+{{#> base }}
+{{> AppSidebar/sidebar components-image-crop=this }}
+<div class="app-main__outer">
+    <div class="app-main__inner">
+        {{> AppMain/page-title }}
+        <div class="row">
+            <div class="col-md-6">
+                <div class="main-card mb-3 card">
+                    <div class="card-body">
+                        <div class="card-title">Image Cropper</div>
+                        <div>
+                            <img src="assets/images/originals/fence-small.jpg" id="image-crop" alt="Picture">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="main-card mb-3 card">
+                    <div class="card-body">
+                        <div class="card-title">Preview</div>
+                        <div class="text-center">
+                            <div class="preview d-inline-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{> AppFooter/footer }}
+</div>
+{{/ base }}

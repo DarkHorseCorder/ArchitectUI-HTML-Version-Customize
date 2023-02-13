@@ -1,0 +1,81 @@
+{{#> base }}
+{{> AppSidebar/sidebar components-count-up=this }}
+<div class="app-main__outer">
+    <div class="app-main__inner">
+        {{> AppMain/page-title }}
+        <div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Basic</h5>
+                            <h3><span class="count-up-wrapper" id="count-up-wrapper"></span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Numbers</h5>
+                            <div class="text-center">
+                                <h3>
+                                    <span class="count-up-wrapper-4" id="count-up-wrapper-4"></span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3 widget-chart">
+                        <div class="icon-wrapper rounded-circle">
+                            <div class="icon-wrapper-bg bg-primary"></div>
+                            <i class="lnr-cog text-primary"></i>
+                        </div>
+                        <div class="widget-numbers"><span class="count-up-wrapper-2" id="count-up-wrapper-2"></span></div>
+                        <div class="widget-subheading">Total Views</div>
+                        <div class="widget-description text-success">
+                            <i class="fa fa-angle-up"></i>
+                            <span class="ps-1">
+                                <span class="count-up-wrapper-3" id="count-up-wrapper-3"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3 widget-chart">
+                        <div class="icon-wrapper rounded-circle">
+                            <div class="icon-wrapper-bg bg-success"></div>
+                            <i class="lnr-screen text-success"></i>
+                        </div>
+                        <div class="widget-numbers"><span class="count-up-wrapper-2" id="count-up-wrapper-6"></span></div>
+                        <div class="widget-subheading">Profiles</div>
+                        <div class="widget-description text-warning">
+                            <span class="pe-1">
+                                <span class="count-up-wrapper-3" id="count-up-wrapper-7"></span>
+                            </span>
+                            <i class="fa fa-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3 widget-chart">
+                        <div class="icon-wrapper rounded-circle">
+                            <div class="icon-wrapper-bg bg-danger"></div>
+                            <i class="lnr-laptop-phone text-danger"></i>
+                        </div>
+                        <div class="widget-numbers"><span class="count-up-wrapper-2" id="count-up-wrapper-5"></span></div>
+                        <div class="widget-subheading">Reports Submitted</div>
+                        <div class="widget-description text-primary">
+                            <span class="pe-1 count-up-wrapper-3" id="count-up-wrapper-8"></span>
+                            <i class="fa fa-angle-up"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{> AppFooter/footer }}
+</div>
+{{/ base }}

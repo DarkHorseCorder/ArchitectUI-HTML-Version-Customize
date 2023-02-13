@@ -1,0 +1,524 @@
+{{#> base }}
+{{> AppSidebar/sidebar elements-cards=this }}
+<div class="app-main__outer">
+    <div class="app-main__inner">
+        {{> AppMain/page-title }}
+        <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
+            <li class="nav-item">
+                <a role="tab" class="nav-link active" id="tab-0" data-bs-toggle="tab" href="#tab-content-0">
+                    <span>Advanced</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a role="tab" class="nav-link" id="tab-1" data-bs-toggle="tab" href="#tab-content-1">
+                    <span>Basic</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a role="tab" class="nav-link" id="tab-2" data-bs-toggle="tab" href="#tab-content-2">
+                    <span>Color States</span>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="main-card mb-3 card">
+                            <div class="card-header">Header</div>
+                            <div class="card-body">
+                                <p>With supporting text below as a natural lead-in to additional content.</p>
+                                <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text ever since the
+                                    1500s, when an unknown printer took a galley of type and scrambled.</p>
+                            </div>
+                            <div class="d-block text-end card-footer">
+                                <button class="me-2 btn btn-link btn-sm">Cancel</button>
+                                <button class="btn btn-success btn-lg">Save</button>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-white card-border bg-dark card">
+                            <div class="card-header"><i class="header-icon lnr-screen icon-gradient bg-warm-flame">
+                                </i>Without Shadow
+                                <div class="btn-actions-pane-right">
+                                    <button class="btn btn-light btn-sm">Actions</button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>With supporting text below as a natural lead-in to additional content.</p>
+                                <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text ever since the
+                                    1500s, when an unknown printer took a galley of type and scrambled.</p>
+                            </div>
+                            <div class="d-block text-end card-footer">
+                                <button class="me-2 text-white btn btn-link btn-sm">No</button>
+                                <button class="btn btn-warning btn-lg">Yes</button>
+                            </div>
+                        </div>
+                        <div class="mb-3 card text-white bg-success">
+                            <div class="card-header">Header</div>
+                            <div class="card-body">With supporting text below as a natural lead-in to additional
+                                content.</div>
+                            <div class="card-footer">Footer</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-hover-shadow-2x mb-3 card">
+                            <div class="card-header">Shadow Hover Card</div>
+                            <div class="card-body">
+                                <p>With supporting text below as a natural lead-in to additional content.</p>
+                                <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text ever since the
+                                    1500s, when an unknown printer took a galley of type and scrambled.</p>
+                            </div>
+                            <div class="d-block text-end card-footer">
+                                <button class="me-2 btn btn-link btn-sm">Cancel</button>
+                                <button class="btn-shadow-primary btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </div>
+                        <div class="card-hover-shadow card-border mb-3 card">
+                            <div class="card-header">Card Hover Shadow</div>
+                            <div class="card-body">
+                                <p>With supporting text below as a natural lead-in to additional content.</p>
+                                <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text ever since the
+                                    1500s, when an unknown printer took a galley of type and scrambled.</p>
+                            </div>
+                            <div class="d-block text-end card-footer">
+                                <button class="me-2 btn btn-link btn-sm">Cancel</button>
+                                <button class="btn-shadow-primary btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-dark card-border card bg-light">
+                            <div class="card-header">Header</div>
+                            <div class="card-body">With supporting text below as a natural lead-in to additional
+                                content.</div>
+                            <div class="card-footer">Footer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="main-card mb-3 card">
+                            <div class="card-header">
+                                <i class="header-icon lnr-laptop-phone icon-gradient bg-plum-plate"> </i>Header Menu
+                                <div class="btn-actions-pane-right actions-icon-btn">
+                                    <button class="btn-icon btn-icon-only btn btn-link">
+                                        <i class="pe-7s-leaf btn-icon-wrapper"></i>
+                                    </button>
+                                    <button class="btn-icon btn-icon-only btn btn-link">
+                                        <i class="pe-7s-cloud-download btn-icon-wrapper"></i>
+                                    </button>
+                                    <div class="btn-group dropdown">
+                                        <button type="button" aria-haspopup="true" data-bs-toggle="dropdown" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
+                                            <i class="pe-7s-menu btn-icon-wrapper"></i>
+                                        </button>
+                                        <div tabindex="-1" role="menu" aria-hidden="true"
+                                            class="dropdown-menu-shadow dropdown-menu-right dropdown-menu-hover-link dropdown-menu">
+                                            <h6 tabindex="-1" class="dropdown-header">Header</h6>
+                                            <button type="button" tabindex="0" class="dropdown-item">
+                                                <i class="dropdown-icon lnr-inbox"> </i><span>Menus</span>
+                                            </button>
+                                            <button type="button" tabindex="0" class="dropdown-item">
+                                                <i class="dropdown-icon lnr-file-empty"></i><span>Settings</span>
+                                            </button>
+                                            <button type="button" tabindex="0" class="dropdown-item">
+                                                <i class="dropdown-icon lnr-book"> </i><span>Actions</span>
+                                            </button>
+                                            <div tabindex="-1" class="dropdown-divider"></div>
+                                            <div class="p-3 text-end">
+                                                <button class="me-2 btn-shadow btn-sm btn btn-link">View Details</button>
+                                                <button class="me-2 btn-shadow btn-sm btn btn-primary">Action</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>With supporting text below as a natural lead-in to additional content.</p>
+                                <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text ever since the
+                                    1500s, when an unknown printer took a galley of type and scrambled.</p>
+                            </div>
+                            <div class="d-block text-end card-footer">
+                                <button class="me-2 btn btn-link btn-sm">Cancel</button>
+                                <button class="btn btn-success btn-lg">Save</button>
+                            </div>
+                        </div>
+                        <div class="main-card mb-3 card">
+                            <div class="card-header">
+                                <i class="header-icon lnr-bicycle icon-gradient bg-love-kiss"> </i>
+                                Header with Tabs
+                                <div class="btn-actions-pane-right actions-icon-btn">
+                                    <div role="group" class="btn-group-sm nav btn-group">
+                                        <a data-bs-toggle="tab" href="#tab-eg3-0" class="btn-shadow active btn btn-dark">Tab 1</a>
+                                        <a data-bs-toggle="tab" href="#tab-eg3-1" class="btn-shadow  btn btn-dark">Tab 2</a>
+                                        <a data-bs-toggle="tab" href="#tab-eg3-2" class="btn-shadow  btn btn-dark">Tab 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active show" id="tab-eg3-0" role="tabpanel">
+                                        <p>It was popularised in the 1960s with the release of Letraset sheets
+                                            containing Lorem Ipsum passages, and more recently with desktop
+                                            publishing software like Aldus PageMaker
+                                            including versions of Lorem Ipsum.</p>
+                                    </div>
+                                    <div class="tab-pane" id="tab-eg3-1" role="tabpanel">
+                                        <p>Like Aldus PageMaker including versions of Lorem. It has survived not only
+                                            five centuries, but also the leap into electronic typesetting, remaining
+                                            essentially unchanged. </p>
+                                    </div>
+                                    <div class="tab-pane" id="tab-eg3-2" role="tabpanel">
+                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley of type and scrambled it to make a
+                                            type specimen book. It has
+                                            survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-block text-end card-footer">
+                                <button class="me-2 btn-icon btn-icon-only btn btn-outline-danger">
+                                    <i class="pe-7s-trash btn-icon-wrapper"> </i>
+                                </button>
+                                <button class="btn-wide btn btn-success">Save</button>
+                            </div>
+                        </div>
+                        <div class="main-card mb-3 card">
+                            <div class="card-header">
+                                <i class="header-icon lnr-gift icon-gradient bg-mixed-hopes">
+                                </i>Alternate Tabs
+                                <div class="btn-actions-pane-right actions-icon-btn">
+                                    <div role="group" class="btn-group-sm nav btn-group">
+                                        <a data-bs-toggle="tab" href="#tab-eg2-0" class="btn-pill ps-3 active btn btn-focus">Tab 1</a>
+                                        <a data-bs-toggle="tab" href="#tab-eg2-1" class="btn btn-focus">Tab 2</a>
+                                        <a data-bs-toggle="tab" href="#tab-eg2-2" class="btn-pill pe-3  btn btn-focus">Tab 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active show" id="tab-eg2-0" role="tabpanel">
+                                        <p>It was popularised in the 1960s with the release of Letraset sheets
+                                            containing Lorem Ipsum passages, and more recently with desktop
+                                            publishing software like Aldus PageMaker
+                                            including versions of Lorem Ipsum.</p>
+                                    </div>
+                                    <div class="tab-pane" id="tab-eg2-1" role="tabpanel">
+                                        <p>Like Aldus PageMaker including versions of Lorem. It has survived not only
+                                            five centuries, but also the leap into electronic typesetting, remaining
+                                            essentially unchanged. </p>
+                                    </div>
+                                    <div class="tab-pane" id="tab-eg2-2" role="tabpanel">
+                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley of type and scrambled it to make a
+                                            type specimen book. It has
+                                            survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="main-card mb-3 card">
+                            <div class="card-header">
+                                <i class="header-icon lnr-graduation-hat icon-gradient bg-happy-itmeo"> </i>Header Menu
+                                <div class="btn-actions-pane-right actions-icon-btn">
+                                    <div role="group" class="btn-group-sm btn-group">
+                                        <div class="btn-group dropdown">
+                                            <button type="button" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown"
+                                                class="btn-pill ps-3 dropdown-toggle btn btn-warning">Left
+                                            </button>
+                                            <div tabindex="-1" role="menu" aria-hidden="true"
+                                                class="dropdown-menu-rounded dropdown-menu-right dropdown-menu">
+                                                <h6 tabindex="-1" class="dropdown-header">Header</h6>
+                                                <button type="button" tabindex="0" class="dropdown-item">Menus</button>
+                                                <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                                <button type="button" tabindex="0" class="dropdown-item">Actions</button>
+                                                <div tabindex="-1" class="dropdown-divider"></div>
+                                                <button type="button" tabindex="0" class="dropdown-item">Dividers</button>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-warning">Middle</button>
+                                        <button class="btn-pill pe-3 btn btn-warning">Right</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>With supporting text below as a natural lead-in to additional content.</p>
+                                <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text ever since the
+                                    1500s, when an unknown printer took a galley of type and scrambled.</p>
+                            </div>
+                            <div class="d-block text-end card-footer">
+                                <button class="me-2 btn btn-link btn-sm">Cancel</button>
+                                <button class="btn-wide btn-shadow btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                        <div class="mb-3 card">
+                            <div class="card-header">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a data-bs-toggle="tab" href="#tab-eg1-0" class="active nav-link">Tab 1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-bs-toggle="tab" href="#tab-eg1-1" class="nav-link">Tab 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-bs-toggle="tab" href="#tab-eg1-2" class="nav-link">Tab 3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active show" id="tab-eg1-0" role="tabpanel">
+                                        <p>It was popularised in the 1960s with the release of Letraset sheets
+                                            containing Lorem Ipsum passages, and more recently with desktop
+                                            publishing software like Aldus PageMaker
+                                            including versions of Lorem Ipsum.</p>
+                                    </div>
+                                    <div class="tab-pane" id="tab-eg1-1" role="tabpanel">
+                                        <p>Like Aldus PageMaker including versions of Lorem. It has survived not only
+                                            five centuries, but also the leap into electronic typesetting, remaining
+                                            essentially unchanged. </p>
+                                    </div>
+                                    <div class="tab-pane" id="tab-eg1-2" role="tabpanel">
+                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley of type and scrambled it to make a
+                                            type specimen book. It has
+                                            survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-block text-end card-footer">
+                                <button class="btn-wide btn-shadow btn btn-danger">Delete</button>
+                            </div>
+                        </div>
+                        <div class="mb-3 card">
+                            <div class="card-header">
+                                <ul class="nav nav-justified">
+                                    <li class="nav-item">
+                                        <a data-bs-toggle="tab" href="#tab-eg-0" class="active nav-link">Tab 1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-bs-toggle="tab" href="#tab-eg-1" class="nav-link">Tab 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-bs-toggle="tab" href="#tab-eg-2" class="nav-link">Tab 3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active show" id="tab-eg-0" role="tabpanel">
+                                        <p>It was popularised in the 1960s with the release of Letraset sheets
+                                            containing Lorem Ipsum passages, and more recently with desktop
+                                            publishing software like Aldus PageMaker
+                                            including versions of Lorem Ipsum.</p>
+                                    </div>
+                                    <div class="tab-pane" id="tab-eg-1" role="tabpanel">
+                                        <p>Like Aldus PageMaker including versions of Lorem. It has survived not only
+                                            five centuries, but also the leap into electronic typesetting, remaining
+                                            essentially unchanged. </p>
+                                    </div>
+                                    <div class="tab-pane" id="tab-eg-2" role="tabpanel">
+                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley of type and scrambled it to make a
+                                            type specimen book. It has
+                                            survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="main-card mb-3 card">
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Example</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor. Aenean massa.</p>
+                            </div>
+                        </div>
+                        <div class="main-card mb-3 card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with Subtitle</h5>
+                                <h6 class="card-subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h6>
+                                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                                    massa quis eni</p>
+                            </div>
+                        </div>
+                        <div class="mb-3 card card-body">
+                            <h5 class="card-title">Special Title Treatment</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                            <button class="btn btn-primary">Go somewhere</button>
+                        </div>
+                        <div class="mb-3 text-center card card-body">
+                            <h5 class="card-title">Special Title Treatment</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                            <button class="btn btn-danger">Go somewhere</button>
+                        </div>
+                        <div class="mb-3 text-end card card-body">
+                            <h5 class="card-title">Special Title Treatment</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                            <button class="btn btn-outline-focus">Go somewhere</button>
+                        </div>
+                        <div class="main-card mb-3 card">
+                            <div class="card-header">Header</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Special Title Treatment</h5>
+                                With supporting text below as a natural lead-in to additional content.
+                                <button class="btn btn-warning">Go somewhere</button>
+                            </div>
+                            <div class="card-footer">Footer</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-card mb-3 card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle">Card subtitle</h6>
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                                <button class="btn btn-secondary">Button</button>
+                            </div>
+                        </div>
+                        <div class="main-card mb-3 card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card Title</h5>
+                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-card mb-3 card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="mb-0 card-subtitle">Card subtitle</h6>
+                            </div>
+                            <div class="card-body">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                <a href="javascript:void(0);" class="card-link">Card Link</a>
+                                <a href="javascript:void(0);" class="card-link">Another Link</a>
+                            </div>
+                        </div>
+                        <div class="main-card mb-3 card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card Title</h5>
+                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane tabs-animation fade" id="tab-content-2" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card-shadow-primary border mb-3 card card-body border-primary">
+                            <h5 class="card-title">Primary Card Shadow</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="card-shadow-secondary border mb-3 card card-body border-secondary">
+                            <h5 class="card-title">Secondary Card Shadow</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="card-shadow-warning border mb-3 card card-body border-warning">
+                            <h5 class="card-title">Warning Card Shadow</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="card-shadow-danger border mb-3 card card-body border-danger">
+                            <h5 class="card-title">Danger Card Shadow</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="card-shadow-success border mb-3 card card-body border-success">
+                            <h5 class="card-title">Success Card Shadow</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="card-shadow-info border mb-3 card card-body border-info">
+                            <h5 class="card-title">Info Card Shadow</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="card-shadow-focus border mb-3 card card-body border-focus">
+                            <h5 class="card-title">Focus Card Shadow</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="card-shadow-alternate border mb-3 card card-body border-alternate">
+                            <h5 class="card-title">Alternate Card Shadow</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border mb-3 card card-body border-primary">
+                            <h5 class="card-title">Primary Card Border</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="card-border mb-3 card card-body border-secondary">
+                            <h5 class="card-title">Secondary Card Border</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="card-border mb-3 card card-body border-warning">
+                            <h5 class="card-title">Warning Card Border</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="card-border mb-3 card card-body border-danger">
+                            <h5 class="card-title">Danger Card Border</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="card-border mb-3 card card-body border-success">
+                            <h5 class="card-title">Success Card Border</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="card-border mb-3 card card-body border-info">
+                            <h5 class="card-title">Info Card Border</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="card-border mb-3 card card-body border-focus">
+                            <h5 class="card-title">Focus Card Border</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="card-border mb-3 card card-body border-alternate">
+                            <h5 class="card-title">Alternate Card Border</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3 card text-white bg-primary">
+                            <div class="card-header">Header</div>
+                            <div class="card-body">With supporting text below as a natural lead-in to additional content.</div>
+                            <div class="card-footer">Footer</div>
+                        </div>
+                        <div class="mb-3 card text-white card-body"
+                            style="background-color: rgb(51, 51, 51); border-color: rgb(51, 51, 51);">
+                            <h5 class="text-white card-title">Special Title Treatment</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="mb-3 card text-white card-body bg-primary">
+                            <h5 class="text-white card-title">Special Title Treatment</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="mb-3 card text-white card-body bg-success">
+                            <h5 class="text-white card-title">Special Title Treatment</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="mb-3 card text-white card-body bg-danger">
+                            <h5 class="text-white card-title">Special Title Treatment</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="mb-3 card text-white card-body bg-info">
+                            <h5 class="text-white card-title">Special Title Treatment</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                        <div class="mb-3 card text-white card-body bg-warning">
+                            <h5 class="text-white card-title">Special Title Treatment</h5>
+                            With supporting text below as a natural lead-in to additional content.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{> AppFooter/footer }}
+</div>
+{{/ base }}

@@ -1,0 +1,542 @@
+<div class="app-sidebar sidebar-shadow">
+    {{> ../AppHeader/Components/logo }}
+    <div class="scrollbar-sidebar">
+        <div class="app-sidebar__inner">
+            <ul class="vertical-nav-menu">
+                <li class="app-sidebar__heading">Menu</li>
+                <li {{#if dashboards-analytics}} class="mm-active" {{/if}} {{#if dashboards-commerce}} class="mm-active"
+                    {{/if}} {{#if dashboards-sales}} class="mm-active" {{/if}} {{#if dashboards-crm}} class="mm-active"
+                    {{/if}} {{#if dashboards-minimal-1}} class="mm-active" {{/if}} {{#if dashboards-minimal-2}}
+                    class="mm-active" {{/if}}>
+                    <a href="#">
+                        <i class="metismenu-icon pe-7s-rocket"></i>Dashboards
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                    </a>
+                    <ul {{#if dashboard-analytics}} class="mm-show" {{/if}} {{#if dashboards-commerce}} class="mm-show"
+                        {{/if}} {{#if dashboards-sales}} class="mm-show" {{/if}} {{#if dashboards-crm}} class="mm-show"
+                        {{/if}} {{#if dashboards-minimal-1}} class="mm-show" {{/if}} {{#if dashboards-minimal-2}}
+                        class="mm-show" {{/if}}>
+                        <li>
+                            <a href="index.html" {{#if dashboards-analytics}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Analytics
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboards-commerce.html" {{#if dashboards-commerce}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Commerce
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboards-sales.html" {{#if dashboards-sales}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Sales
+                            </a>
+                        </li>
+                        <li {{#if dashboards-minimal-1}} class="mm-active" {{/if}} {{#if dashboards-minimal-2}}
+                            class="mm-active" {{/if}}>
+                            <a href="#">
+                                <i class="metismenu-icon"></i> Minimal
+                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                            </a>
+                            <ul {{#if dashboards-minimal-1}} class="mm-show" {{/if}} {{#if dashboards-minimal-2}}
+                                class="mm-show" {{/if}}>
+                                <li>
+                                    <a href="dashboards-minimal-1.html" {{#if dashboards-minimal-1}} class="mm-active"
+                                        {{/if}}>
+                                        <i class="metismenu-icon"></i>Variation 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboards-minimal-2.html" {{#if dashboards-minimal-2}} class="mm-active"
+                                        {{/if}}>
+                                        <i class="metismenu-icon"></i>Variation 2
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="dashboards-crm.html" {{#if dashboards-crm}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i> CRM
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li {{#if pages-login}} class="mm-active" {{/if}} {{#if pages-login-boxed}} class="mm-active" {{/if}}
+                    {{#if pages-register}} class="mm-active" {{/if}} {{#if pages-register-boxed}} class="mm-active"
+                    {{/if}} {{#if pages-forgot-password}} class="mm-active" {{/if}} {{#if pages-forgot-password-boxed}}
+                    class="mm-active" {{/if}}>
+                    <a href="#">
+                        <i class="metismenu-icon pe-7s-browser"></i>Pages
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                    </a>
+                    <ul {{#if pages-login}} class="mm-show" {{/if}} {{#if pages-login-boxed}} class="mm-show" {{/if}}
+                        {{#if pages-register}} class="mm-show" {{/if}} {{#if pages-register-boxed}} class="mm-show"
+                        {{/if}} {{#if pages-forgot-password}} class="mm-show" {{/if}}
+                        {{#if pages-forgot-password-boxed}} class="mm-show" {{/if}}>
+                        <li>
+                            <a href="pages-login.html" {{#if pages-login}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i> Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages-login-boxed.html" {{#if pages-login-boxed}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Login Boxed
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages-register.html" {{#if pages-register}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Register
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages-register-boxed.html" {{#if pages-register-boxed}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Register Boxed
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages-forgot-password.html" {{#if pages-forgot-password}} class="mm-active"
+                                {{/if}}>
+                                <i class="metismenu-icon"></i>Forgot Password
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages-forgot-password-boxed.html" {{#if pages-forgot-password-boxed}}
+                                class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Forgot Password Boxed
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li {{#if apps-mailbox}} class="mm-active" {{/if}} {{#if apps-chat}} class="mm-active" {{/if}}
+                    {{#if apps-faq-section}} class="mm-active" {{/if}} {{#if apps-forums-list}} class="mm-active"
+                    {{/if}} {{#if apps-forums-threads}} class="mm-active" {{/if}} {{#if apps-forums-discussion}}
+                    class="mm-active" {{/if}}>
+                    <a href="#">
+                        <i class="metismenu-icon pe-7s-plugin"></i>Applications
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                    </a>
+                    <ul {{#if apps-mailbox}} class="mm-show" {{/if}} {{#if apps-chat}} class="mm-show" {{/if}}
+                        {{#if apps-faq-section}} class="mm-show" {{/if}}>
+                        <li>
+                            <a href="apps-mailbox.html" {{#if apps-mailbox}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Mailbox
+                            </a>
+                        </li>
+                        <li>
+                            <a href="apps-chat.html" {{#if apps-chat}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Chat
+                            </a>
+                        </li>
+                        <li>
+                            <a href="apps-faq-section.html" {{#if apps-faq-section}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>FAQ Section
+                            </a>
+                        </li>
+                        <li {{#if apps-forums-list}} class="mm-active" {{/if}} {{#if apps-forums-threads}}
+                            class="mm-active" {{/if}} {{#if apps-forums-discussion}} class="mm-active" {{/if}}>
+                            <a href="#">
+                                <i class="metismenu-icon"></i>Forums
+                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                            </a>
+                            <ul {{#if apps-forums-list}} class="mm-show" {{/if}} {{#if apps-forums-threads}}
+                                class="mm-show" {{/if}} {{#if apps-forums-discussion}} class="mm-show" {{/if}}>
+                                <li>
+                                    <a href="apps-forum-list.html" {{#if apps-forums-list}} class="mm-active" {{/if}}>
+                                        <i class="metismenu-icon"></i>Forum Listing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="apps-forum-threads.html" {{#if apps-forums-threads}} class="mm-active"
+                                        {{/if}}>
+                                        <i class="metismenu-icon"></i>Forum Threads
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="apps-forum-discussion.html" {{#if apps-forums-discussion}} class="mm-active" {{/if}}>
+                                        <i class="metismenu-icon"></i>Forum Discussion
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="app-sidebar__heading">UI Components</li>
+                <li {{#if elements-buttons-standard}} class="mm-active" {{/if}} {{#if elements-buttons-pills}}
+                    class="mm-active" {{/if}} {{#if elements-buttons-square}} class="mm-active" {{/if}}
+                    {{#if elements-buttons-shadow}} class="mm-active" {{/if}} {{#if elements-buttons-icons}}
+                    class="mm-active" {{/if}} {{#if elements-buttons-square}} class="mm-active" {{/if}}
+                    {{#if elements-dropdowns}} class="mm-active" {{/if}} {{#if elements-icons}} class="mm-active"
+                    {{/if}} {{#if elements-badges-labels}} class="mm-active" {{/if}} {{#if elements-cards}}
+                    class="mm-active" {{/if}} {{#if elements-loaders}} class="mm-active" {{/if}}
+                    {{#if elements-list-group}} class="mm-active" {{/if}} {{#if elements-navigation}} class="mm-active"
+                    {{/if}} {{#if elements-timelines}} class="mm-active" {{/if}} {{#if elements-utilities}}
+                    class="mm-active" {{/if}}>
+                    <a href="#">
+                        <i class="metismenu-icon pe-7s-diamond"></i> Elements
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                    </a>
+                    <ul {{#if elements-buttons-standard}} class="mm-show" {{/if}} {{#if elements-buttons-pills}}
+                        class="mm-show" {{/if}} {{#if elements-buttons-square}} class="mm-show" {{/if}}
+                        {{#if elements-buttons-shadow}} class="mm-show" {{/if}} {{#if elements-buttons-icons}}
+                        class="mm-show" {{/if}} {{#if elements-buttons-square}} class="mm-show" {{/if}}
+                        {{#if elements-dropdowns}} class="mm-show" {{/if}} {{#if elements-icons}} class="mm-show"
+                        {{/if}} {{#if elements-badges-labels}} class="mm-show" {{/if}} {{#if elements-cards}}
+                        class="mm-show" {{/if}} {{#if elements-loaders}} class="mm-show" {{/if}}
+                        {{#if elements-list-group}} class="mm-show" {{/if}} {{#if elements-navigation}} class="mm-show"
+                        {{/if}} {{#if elements-timelines}} class="mm-show" {{/if}} {{#if elements-utilities}}
+                        class="mm-show" {{/if}}>
+                        <li {{#if elements-buttons-standard}} class="mm-active" {{/if}} {{#if elements-buttons-pills}}
+                            class="mm-active" {{/if}} {{#if elements-buttons-square}} class="mm-active" {{/if}}
+                            {{#if elements-buttons-shadow}} class="mm-active" {{/if}} {{#if elements-buttons-icons}}
+                            class="mm-active" {{/if}} {{#if elements-buttons-square}} class="mm-active" {{/if}}>
+                            <a href="#">
+                                <i class="metismenu-icon"></i> Buttons
+                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                            </a>
+                            <ul {{#if elements-buttons-standard}} class="mm-show" {{/if}} {{#if elements-buttons-pills}}
+                                class="mm-show" {{/if}} {{#if elements-buttons-square}} class="mm-show" {{/if}}
+                                {{#if elements-buttons-shadow}} class="mm-show" {{/if}} {{#if elements-buttons-icons}}
+                                class="mm-show" {{/if}} {{#if elements-buttons-square}} class="mm-show" {{/if}}>
+                                <li>
+                                    <a href="elements-buttons-standard.html" {{#if elements-buttons-standard}} class="mm-active" {{/if}}>
+                                        <i class="metismenu-icon"></i>Standard
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="elements-buttons-pills.html" {{#if elements-buttons-pills}} class="mm-active" {{/if}}>
+                                        <i class="metismenu-icon"></i>Pills
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="elements-buttons-square.html" {{#if elements-buttons-square}} class="mm-active" {{/if}}>
+                                        <i class="metismenu-icon"></i>Square
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="elements-buttons-shadow.html" {{#if elements-buttons-shadow}}  class="mm-active" {{/if}}>
+                                        <i class="metismenu-icon"></i>Shadow
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="elements-buttons-icons.html" {{#if elements-buttons-icons}} class="mm-active" {{/if}}>
+                                        <i class="metismenu-icon"></i>With Icons
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="elements-dropdowns.html" {{#if elements-dropdowns}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Dropdowns
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-icons.html" {{#if elements-icons}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Icons
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-badges-labels.html" {{#if elements-badges-labels}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Badges
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-cards.html" {{#if elements-cards}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Cards
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-loaders.html" {{#if elements-loaders}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Loading Indicators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-list-group.html" {{#if elements-list-group}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>List Groups
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-navigation.html" {{#if elements-navigation}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Navigation Menus
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-timelines.html" {{#if elements-timelines}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Timeline
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-utilities.html" {{#if elements-utilities}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Utilities
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li {{#if components-tabs}} class="mm-active" {{/if}} {{#if components-accordions}} class="mm-active"
+                    {{/if}} {{#if components-notifications}} class="mm-active" {{/if}} {{#if components-modals}}
+                    class="mm-active" {{/if}} {{#if components-loading-blocks}} class="mm-active" {{/if}}
+                    {{#if components-progress-bar}} class="mm-active" {{/if}} {{#if components-tooltips-popovers}}
+                    class="mm-active" {{/if}} {{#if components-carousel}} class="mm-active" {{/if}}
+                    {{#if components-calendar}} class="mm-active" {{/if}} {{#if components-pagination}}
+                    class="mm-active" {{/if}} {{#if components-count-up}} class="mm-active" {{/if}}
+                    {{#if components-scrollable-elements}} class="mm-active" {{/if}} {{#if components-tree-view}}
+                    class="mm-active" {{/if}} {{#if components-maps}} class="mm-active" {{/if}}
+                    {{#if components-ratings}} class="mm-active" {{/if}} {{#if components-image-crop}} class="mm-active"
+                    {{/if}} {{#if components-guided-tours}} class="mm-active" {{/if}}>
+                    <a href="#">
+                        <i class="metismenu-icon pe-7s-car"></i> Components
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                    </a>
+                    <ul {{#if components-tabs}} class="mm-show" {{/if}} {{#if components-accordions}} class="mm-show"
+                        {{/if}} {{#if components-notifications}} class="mm-show" {{/if}} {{#if components-modals}}
+                        class="mm-show" {{/if}} {{#if components-loading-blocks}} class="mm-show" {{/if}}
+                        {{#if components-progress-bar}} class="mm-show" {{/if}} {{#if components-tooltips-popovers}}
+                        class="mm-show" {{/if}} {{#if components-carousel}} class="mm-show" {{/if}}
+                        {{#if components-calendar}} class="mm-show" {{/if}} {{#if components-pagination}}
+                        class="mm-show" {{/if}} {{#if components-count-up}} class="mm-show" {{/if}}
+                        {{#if components-scrollable-elements}} class="mm-show" {{/if}} {{#if components-tree-view}}
+                        class="mm-show" {{/if}} {{#if components-maps}} class="mm-show" {{/if}}
+                        {{#if components-ratings}} class="mm-show" {{/if}} {{#if components-image-crop}} class="mm-show"
+                        {{/if}} {{#if components-guided-tours}} class="mm-show" {{/if}}>
+                        <li>
+                            <a href="components-tabs.html" {{#if components-tabs}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Tabs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-accordions.html" {{#if components-accordions}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Accordions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-notifications.html" {{#if components-notifications}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Notifications
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-modals.html" {{#if components-modals}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Modals
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-loading-blocks.html" {{#if components-loading-blocks}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Loading Blockers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-progress-bar.html" {{#if components-progress-bar}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Progress Bar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-tooltips-popovers.html" {{#if components-tooltips-popovers}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"> </i>Tooltips &amp; Popovers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-carousel.html" {{#if components-carousel}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Carousel
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-calendar.html" {{#if components-calendar}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Calendar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-pagination.html" {{#if components-pagination}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Pagination
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-count-up.html" {{#if components-count-up}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Count Up
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-scrollable-elements.html" {{#if components-scrollable-elements}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Scrollable
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-tree-view.html" {{#if components-tree-view}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Tree View
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-maps.html" {{#if components-maps}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Maps
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-ratings.html" {{#if components-ratings}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Ratings
+                            </a>
+                        </li>
+                        {{!-- <li>
+                            <a href="components-image-crop.html" {{#if components-image-crop}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Image Crop
+                            </a>
+                        </li> --}}
+                        <li>
+                            <a href="components-guided-tours.html" {{#if components-guided-tours}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Guided Tours
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li {{#if tables-data-tables}} class="mm-active" {{/if}} {{#if tables-regular}} class="mm-active"
+                    {{/if}} {{#if tables-grid}} class="mm-active" {{/if}}>
+                    <a href="#">
+                        <i class="metismenu-icon pe-7s-display2"></i> Tables
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                    </a>
+                    <ul {{#if tables-data-tables}} class="mm-show" {{/if}} {{#if tables-regular}} class="mm-show"
+                        {{/if}} {{#if tables-grid}} class="mm-show" {{/if}}>
+                        <li>
+                            <a href="tables-data-tables.html" {{#if tables-data-tables}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"> </i>Data Tables
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tables-regular.html" {{#if tables-regular}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Regular Tables
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tables-grid.html" {{#if tables-grid}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Grid Tables
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="app-sidebar__heading">Dashboard Widgets</li>
+                <li>
+                    <a href="widgets-chart-boxes.html" {{#if widgets-chart-boxes}} class="mm-active" {{/if}}>
+                        <i class="metismenu-icon pe-7s-graph"></i>Chart Boxes 1
+                    </a>
+                </li>
+                <li>
+                    <a href="widgets-chart-boxes-2.html" {{#if widgets-chart-boxes-2}} class="mm-active" {{/if}}>
+                        <i class="metismenu-icon pe-7s-way"></i>Chart Boxes 2
+                    </a>
+                </li>
+                <li>
+                    <a href="widgets-chart-boxes-3.html" {{#if widgets-chart-boxes-3}} class="mm-active" {{/if}}>
+                        <i class="metismenu-icon pe-7s-ball"></i>Chart Boxes 3
+                    </a>
+                </li>
+                <li>
+                    <a href="widgets-profile-boxes.html" {{#if widgets-profile-boxes}} class="mm-active" {{/if}}>
+                        <i class="metismenu-icon pe-7s-id"></i>Profile Boxes
+                    </a>
+                </li>
+                <li class="app-sidebar__heading">Forms</li>
+                <li {{#if forms-controls}} class="mm-active" {{/if}} {{#if forms-layouts}} class="mm-active" {{/if}}
+                    {{#if forms-validation}} class="mm-active" {{/if}} {{#if forms-wizard}} class="mm-active" {{/if}}>
+                    <a href="#">
+                        <i class="metismenu-icon pe-7s-light"></i> Elements
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                    </a>
+                    <ul {{#if forms-controls}} class="mm-show" {{/if}} {{#if forms-layouts}} class="mm-show" {{/if}}
+                        {{#if forms-validation}} class="mm-show" {{/if}} {{#if forms-wizard}} class="mm-show" {{/if}}>
+                        <li>
+                            <a href="forms-controls.html" {{#if forms-controls}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Controls
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms-layouts.html" {{#if forms-layouts}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Layouts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms-validation.html" {{#if forms-validation}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Validation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms-wizard.html" {{#if forms-wizard}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Wizard
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li {{#if forms-datepicker}} class="mm-active" {{/if}} {{#if forms-range-slider}} class="mm-active"
+                    {{/if}} {{#if forms-input-selects}} class="mm-active" {{/if}} {{#if forms-toggle-switch}}
+                    class="mm-active" {{/if}} {{#if forms-wysiwyg-editor}} class="mm-active" {{/if}}
+                    {{#if forms-input-mask}} class="mm-active" {{/if}} {{#if forms-typeahead}} class="mm-active" {{/if}}
+                    {{#if forms-clipboard}} class="mm-active" {{/if}} {{#if forms-textarea-autosize}} class="mm-active"
+                    {{/if}}>
+                    <a href="#">
+                        <i class="metismenu-icon pe-7s-joy"></i> Widgets
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                    </a>
+                    <ul {{#if forms-datepicker}} class="mm-show" {{/if}} {{#if forms-range-slider}} class="mm-show"
+                        {{/if}} {{#if forms-input-selects}} class="mm-show" {{/if}} {{#if forms-toggle-switch}}
+                        class="mm-show" {{/if}} {{#if forms-wysiwyg-editor}} class="mm-show" {{/if}}
+                        {{#if forms-input-mask}} class="mm-show" {{/if}} {{#if forms-typeahead}} class="mm-show" {{/if}}
+                        {{#if forms-clipboard}} class="mm-show" {{/if}} {{#if forms-textarea-autosize}} class="mm-show"
+                        {{/if}}>
+                        <li>
+                            <a href="forms-datepicker.html" {{#if forms-datepicker}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Datepicker
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms-range-slider.html" {{#if forms-range-slider}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Range Slider
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms-input-selects.html" {{#if forms-input-selects}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Input Selects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms-toggle-switch.html" {{#if forms-toggle-switch}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Toggle Switch
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms-wysiwyg-editor.html" {{#if forms-wysiwyg-editor}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>WYSIWYG Editor
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms-input-mask.html" {{#if forms-input-mask}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Input Mask
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms-clipboard.html" {{#if forms-clipboard}} class="mm-active" {{/if}}>
+                                <i class="metismenu-icon"></i>Clipboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms-textarea-autosize.html" {{#if forms-textarea-autosize}} class="mm-active"
+                                {{/if}}>
+                                <i class="metismenu-icon"></i>Textarea Autosize
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="app-sidebar__heading">Charts</li>
+                <li>
+                    <a href="charts-chartjs.html" {{#if charts-chartjs}} class="mm-active" {{/if}}>
+                        <i class="metismenu-icon pe-7s-graph2"></i>ChartJS
+                    </a>
+                </li>
+                <li>
+                    <a href="charts-apexcharts.html" {{#if charts-apexcharts}} class="mm-active" {{/if}}>
+                        <i class="metismenu-icon pe-7s-graph"></i>Apex Charts
+                    </a>
+                </li>
+                <li>
+                    <a href="charts-sparklines.html" {{#if charts-sparklines}} class="mm-active" {{/if}}>
+                        <i class="metismenu-icon pe-7s-graph1"></i>Chart Sparklines
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

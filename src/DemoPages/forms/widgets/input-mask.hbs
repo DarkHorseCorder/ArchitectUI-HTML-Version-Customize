@@ -1,0 +1,129 @@
+{{#> base }}
+{{> AppSidebar/sidebar forms-input-mask=this }}
+<div class="app-main__outer">
+    <div class="app-main__inner">
+        {{> AppMain/page-title }}
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="form-label col-sm-3 text-end col-form-label">Date:</label>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <div class="">
+                                    <i class="fa fa-calendar-alt"></i>
+                                </div>
+                            </div>
+                            <input class="form-control input-mask-trigger" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" im-insert="false">
+                        </div>
+                        <small class="form-text text-muted">
+                            data-inputmask-alias="datetime" data-inputmask-inputformat="mm/dd/yyyy"
+                        </small>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="form-label col-sm-3 text-end col-form-label">Date 2:</label>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <div class="">
+                                    <i class="fa fa-calendar-alt"></i>
+                                </div>
+                            </div>
+                            <input class="form-control input-mask-trigger" data-inputmask-alias="datetime" data-inputmask-inputformat="mm/dd/yyyy" im-insert="false">
+                        </div>
+                        <small class="form-text text-muted">
+                            data-inputmask-alias="datetime" data-inputmask-inputformat="mm/dd/yyyy"
+                        </small>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="form-label col-sm-3 text-end col-form-label">Currency:</label>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <div class="">
+                                    <i class="fa fa-calendar-alt"></i>
+                                </div>
+                            </div>
+                            <input class="form-control input-mask-trigger"
+                                data-inputmask="'alias': 'numeric', 'groupSeparator': ',', 'autoGroup': true, 'digits': 2, 'digitsOptional': false, 'prefix': '$ ', 'placeholder': '0'"
+                                im-insert="true" style="text-align: right;">
+                        </div>
+                        <small class="form-text text-muted">
+                            data-inputmask="'alias': 'numeric', 'groupSeparator': ',', 'autoGroup': true, 'digits': 2,
+                            'digitsOptional': false, 'prefix': '$ ', 'placeholder': '0'"
+                        </small>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="form-label col-sm-3 text-end col-form-label">License plate:</label>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <div class="">
+                                    <i class="fa fa-calendar-alt"></i>
+                                </div>
+                            </div>
+                            <input class="form-control input-mask-trigger" data-inputmask="'mask': '[9-]AAA-999'" im-insert="true">
+                        </div>
+                        <small class="form-text text-muted">
+                            data-inputmask="'mask': '[9-]AAA-999'"
+                        </small>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="form-label col-sm-3 text-end col-form-label">Decimal:</label>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <div class="">
+                                    <i class="fa fa-calendar-alt"></i>
+                                </div>
+                            </div>
+                            <input class="form-control input-mask-trigger"
+                                data-inputmask="'alias': 'decimal', 'groupSeparator': ',', 'autoGroup': true" im-insert="true">
+                        </div>
+                        <small class="form-text text-muted">
+                            data-inputmask="'alias': 'decimal', 'groupSeparator': ',', 'autoGroup': true"
+                        </small>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="form-label col-sm-3 text-end col-form-label">IP address:</label>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <div class="">
+                                    <i class="fa fa-calendar-alt"></i>
+                                </div>
+                            </div>
+                            <input class="form-control input-mask-trigger" id="ip" data-inputmask="'alias': 'ip'" im-insert="true">
+                        </div>
+                        <small class="form-text text-muted">
+                            data-inputmask="'alias': 'ip'"
+                        </small>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="form-label col-sm-3 text-end col-form-label">Email address:</label>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <div class="">
+                                    <i class="fa fa-calendar-alt"></i>
+                                </div>
+                            </div>
+                            <input class="form-control input-mask-trigger" id="email" data-inputmask="'alias': 'email'" im-insert="true">
+                        </div>
+                        <small class="form-text text-muted">
+                            data-inputmask="'alias': 'email'"
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{> AppFooter/footer }}
+</div>
+{{/ base }}

@@ -1,0 +1,8 @@
+.npm
+*.log
+npm-debug.log*
+dist
+node_modules
+.idea
+architectui-html-pro
+package-lock.json

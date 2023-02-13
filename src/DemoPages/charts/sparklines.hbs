@@ -1,0 +1,92 @@
+{{#> base }}
+{{> AppSidebar/sidebar charts-sparklines=this }}
+<div class="app-main__outer">
+    <div class="app-main__inner">
+        {{> AppMain/page-title }}
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                <h5 class="card-title">Simple Sparklines</h5>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="bar-sparkline mx-auto"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bar-sparkline-2 mx-auto">1,2,4,6,9,4,4,3,1,7,2,4,6,9,4,4,3,1,7,5,9,10</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="dynamic-sparkline mx-auto">Loading...</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tristate-sparkline mx-auto">2,4,6,-4,-2,0,5,7,10,-4,-10,0,0,2,4,-5,4</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="discrete-sparkline mx-auto">
+                            1,2,4,6,9,4,4,3,1,7,2,4,6,9,4,4,3,1,7,5,9,10,1,2,4,6,9,4,4,3,1,7,2,4,6,9,4,4,3,1,7,5,9,10
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pie-sparkline mx-auto">2,4,6,9,4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-card mb-3 card">
+            <div class="card-body table-responsive">
+                <div class="card-title">ApexCharts Sparklines</div>
+                <table class="table table-bordered table-hover table-stripe">
+                    <thead>
+                        <th>Total Value</th>
+                        <th>Percentage of Portfolio</th>
+                        <th>Last 10 days</th>
+                        <th>Volume</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>$32,554</td>
+                            <td>15%</td>
+                            <td>
+                                <div id="sparkline-chart1"></div>
+                            </td>
+                            <td>
+                                <div id="sparkline-chart5"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>$23,533</td>
+                            <td>7%</td>
+                            <td>
+                                <div id="sparkline-chart2"></div>
+                            </td>
+                            <td>
+                                <div id="sparkline-chart6"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>$54,276</td>
+                            <td>9%</td>
+                            <td>
+                                <div id="sparkline-chart3"></div>
+                            </td>
+                            <td>
+                                <div id="sparkline-chart7"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>$11,533</td>
+                            <td>2%</td>
+                            <td>
+                                <div id="sparkline-chart4"></div>
+                            </td>
+                            <td>
+                                <div id="sparkline-chart8"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    {{> AppFooter/footer }}
+</div>
+{{/ base }}

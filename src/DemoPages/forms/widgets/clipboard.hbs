@@ -1,0 +1,54 @@
+{{#> base }}
+{{> AppSidebar/sidebar forms-clipboard=this }}
+<div class="app-main__outer">
+    <div class="app-main__inner">
+        {{> AppMain/page-title }}
+        <div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Text to Copy</h5>
+                            <textarea rows="2" cols="10" id="clipboard-source" class="form-control">
+                                Write here the text that you are copying. This is a new text line!
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Input Group Copy</h5>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="clipboard-source-2" value="Example text to copy!">
+                                <div class="input-group-text">
+                                    <button type="button" data-clipboard-target="#clipboard-source-2" class="btn btn-primary clipboard-trigger">
+                                        <i class="fa fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Button Copy</h5>
+                            <button type="button" data-clipboard-target="#clipboard-source" class="clipboard-trigger btn-shadow btn-pill btn-wide btn btn-primary">
+                                Copy to clipboard with button
+                            </button>
+                        </div>
+                    </div>
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Copy from attribute</h5>
+                            <button class="btn-shadow btn-pill btn-wide btn btn-success clipboard-trigger" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">
+                                Copy to clipboard
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{> AppFooter/footer }}
+</div>
+{{/ base }}

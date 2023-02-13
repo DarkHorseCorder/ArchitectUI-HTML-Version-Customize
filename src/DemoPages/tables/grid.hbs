@@ -1,0 +1,25 @@
+{{#> base }}
+{{> AppSidebar/sidebar tables-grid=this }}
+<div class="app-main__outer">
+    <div class="app-main__inner">
+        {{> AppMain/page-title }}
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                <table data-toggle="table"
+                    data-url="https://api.github.com/users/wenzhixin/repos?type=owner&sort=full_name&direction=asc&per_page=100&page=1"
+                    data-sort-name="stargazers_count" data-sort-order="desc">
+                    <thead>
+                        <tr>
+                            <th data-field="name" data-sortable="true"> Name </th>
+                            <th data-field="stargazers_count" data-sortable="true"> Stars </th>
+                            <th data-field="forks_count" data-sortable="true"> Forks </th>
+                            <th data-field="description" data-sortable="true"> Description </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    {{> AppFooter/footer }}
+</div>
+{{/ base }}

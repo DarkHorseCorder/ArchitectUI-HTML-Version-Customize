@@ -1,0 +1,126 @@
+{{#> base }}
+    {{> AppSidebar/sidebar forms-datepicker=this }}
+    <div class="app-main__outer">
+        <div class="app-main__inner">
+            {{> AppMain/page-title }}
+            <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
+                <li class="nav-item">
+                    <a role="tab" class="nav-link active" id="tab-0" data-bs-toggle="tab" href="#tab-content-0">
+                        <span>Datepicker</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a role="tab" class="nav-link" id="tab-1" data-bs-toggle="tab" href="#tab-content-1">
+                        <span>Date Range Picker</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="main-card mb-3 card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic</h5>
+                                    <input type="text" class="form-control" data-toggle="datepicker"/>
+                                </div>
+                            </div>
+                            <div class="main-card mb-3 card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Inline</h5>
+                                    <div data-toggle="datepicker-inline"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="main-card mb-3 card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Button Trigger</h5>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" data-toggle="datepicker-button"/>
+                                        <button class="btn btn-outline-primary datepicker-trigger-btn" type="button">Open Datepicker</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-card mb-3 card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Icon Trigger</h5>
+                                    <div class="input-group">
+                                        <div class="input-group-text datepicker-trigger">
+                                            <div class="">
+                                                <i class="fa fa-calendar-alt"></i>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" data-toggle="datepicker-icon"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-card mb-3 card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Start View Year</h5>
+                                    <input type="text" class="form-control" data-toggle="datepicker-year"/>
+                                </div>
+                            </div>
+                            <div class="main-card mb-3 card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Start View Month</h5>
+                                    <input type="text" class="form-control" data-toggle="datepicker-month"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="main-card mb-3 card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic</h5>
+                                    <input type="text" class="form-control" name="daterange" value="01/01/2018 - 01/15/2018"/>
+                                </div>
+                            </div>
+                            <div class="main-card mb-3 card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Single Datepicker</h5>
+                                    <input type="text" class="form-control" name="birthday" value="10/24/1984"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="main-card mb-3 card">
+                                <div class="card-body">
+                                    <h5 class="card-title">With Times</h5>
+                                    <input type="text" class="form-control" name="datetimes"/>
+                                </div>
+                            </div>
+                            <div class="main-card mb-3 card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Predefined Date Ranges</h5>
+                                    <button class="btn btn-primary" id="reportrange">
+                                        <i class="fa fa-calendar pe-1"></i>
+                                        <span></span>
+                                        <i class="fa ps-1 fa-caret-down"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Complex Example</h5>
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <div class="">
+                                        <i class="fa fa-calendar-alt"></i>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" name="daterange-centered"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{> AppFooter/footer }}
+    </div>
+{{/ base }}

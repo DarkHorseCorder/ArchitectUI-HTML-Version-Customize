@@ -1,0 +1,544 @@
+{{#> base }}
+{{> AppSidebar/sidebar apps-mailbox=this }}
+<div class="app-main__outer">
+    <div class="app-main__inner p-0">
+
+        <div class="app-inner-layout">
+            <div class="app-inner-layout__header bg-heavy-rain">
+                {{> AppMain/page-title }}
+            </div>
+            <div class="app-inner-layout__wrapper">
+                <div class="app-inner-layout__content card">
+                    <div>
+                        <div class="app-inner-layout__top-pane">
+                            <div class="pane-left">
+                                <div class="mobile-app-menu-btn">
+                                    <button type="button" class="hamburger hamburger--elastic">
+                                        <span class="hamburger-box">
+                                            <span class="hamburger-inner"></span>
+                                        </span>
+                                    </button>
+                                </div>
+                                <h4 class="mb-0">Inbox</h4>
+                                <div class="btn-group dropdown">
+                                    <button type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false" class="btn btn-link">
+                                        <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <div tabindex="-1" role="menu" aria-hidden="true"
+                                        class="dropdown-menu-xl rm-pointers dropdown-menu">
+                                        <div class="dropdown-menu-header">
+                                            <div class="dropdown-menu-header-inner bg-night-fade">
+                                                <div class="menu-header-image opacity-1"
+                                                    style="background-image: url('assets/images/dropdown-header/city5.jpg');">
+                                                </div>
+                                                <div class="menu-header-content text-dark">
+                                                    <h5 class="menu-header-title">Settings</h5>
+                                                    <h6 class="menu-header-subtitle">Manage all of your options</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-menu grid-menu-xl grid-menu-2col">
+                                            <div class="g-0 row">
+                                                <div class="col-sm-6">
+                                                    <button class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
+                                                        <i class="lnr-license btn-icon-wrapper btn-icon-lg mb-3"></i>Primary
+                                                    </button>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <button class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
+                                                        <i class="lnr-map btn-icon-wrapper btn-icon-lg mb-3"></i>Secondary
+                                                    </button>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <button
+                                                        class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
+                                                        <i class="lnr-music-note btn-icon-wrapper btn-icon-lg mb-3"></i>Success
+                                                    </button>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <button class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
+                                                        <i class="lnr-heart btn-icon-wrapper btn-icon-lg mb-3"></i>Info
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item-divider nav-item"></li>
+                                            <li class="nav-item-btn text-center nav-item">
+                                                <button class="btn-shadow btn btn-primary btn-sm">Submit</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pane-right">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <div class="">
+                                            <i class="fa fa-search fa-w-16 "></i>
+                                        </div>
+                                    </div>
+                                    <input placeholder="Search..." type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white">
+                            <div class="table-responsive">
+                                <table class="text-nowrap table-lg mb-0 table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center" style="width: 78px;">
+                                                <div class="">
+                                                    <input type="checkbox" id="eCheckbox1" class="form-check-input">
+                                                    <label class="form-check-label" for="eCheckbox1">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <td class="text-start ps-1">
+                                                <i class="fa fa-star"></i>
+                                            </td>
+                                            <td>
+                                                <div class="widget-content p-0">
+                                                    <div class="widget-content-wrapper">
+                                                        <div class="widget-content-left me-3">
+                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                                        </div>
+                                                        <div class="widget-content-left">
+                                                            <div class="widget-heading">Alina Mcloughlin</div>
+                                                            <div class="widget-subheading">Last seen online 15 minutes ago</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-start">Nullam dictum felis eu pede mollis pretium.</td>
+                                            <td>
+                                                <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                            </td>
+                                            <td class="text-end">
+                                                <i class="fa fa-calendar-alt opacity-4 me-2"></i>
+                                                7 Dec
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center" style="width: 78px;">
+                                                <div class="">
+                                                    <input type="checkbox" id="eCheckbox2" class="form-check-input">
+                                                    <label class="form-check-label" for="eCheckbox2">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <td class="text-start ps-1">
+                                                <i class="fa fa-star"></i>
+                                            </td>
+                                            <td>
+                                                <div class="widget-content p-0">
+                                                    <div class="widget-content-wrapper">
+                                                        <div class="widget-content-left me-3">
+                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/2.jpg" alt="">
+                                                        </div>
+                                                        <div class="widget-content-left">
+                                                            <div class="widget-heading">John Smith</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-start">But I must explain to you how all this mistaken idea
+                                                of denouncing pleasure ...</td>
+                                            <td>
+                                                <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                            </td>
+                                            <td class="text-end">
+                                                <i class="fa fa-calendar-alt opacity-4 me-2"></i>
+                                                7 Dec
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center" style="width: 78px;">
+                                                <div class="">
+                                                    <input type="checkbox" id="eCheckbox3" class="form-check-input">
+                                                    <label class="form-check-label" for="eCheckbox3">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <td class="text-start ps-1">
+                                                <i class="fa fa-star"></i>
+                                            </td>
+                                            <td>
+                                                <div class="widget-content p-0">
+                                                    <div class="widget-content-wrapper">
+                                                        <div class="widget-content-left me-3">
+                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/3.jpg" alt="">
+                                                        </div>
+                                                        <div class="widget-content-left">
+                                                            <div class="widget-heading">Eliot Huber</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-start">But I must explain to you how all this mistaken idea
+                                                of denouncing pleasure ...</td>
+                                            <td>
+                                                <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                            </td>
+                                            <td class="text-end">
+                                                <i class="fa fa-calendar-alt opacity-4 me-2"></i>
+                                                7 Dec
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center" style="width: 78px;">
+                                                <div class="">
+                                                    <input type="checkbox" id="eCheckbox4" class="form-check-input">
+                                                    <label class="form-check-label" for="eCheckbox4">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <td class="text-start ps-1">
+                                                <i class="fa fa-star"></i>
+                                            </td>
+                                            <td>
+                                                <div class="widget-content p-0">
+                                                    <div class="widget-content-wrapper">
+                                                        <div class="widget-content-left me-3">
+                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
+                                                        </div>
+                                                        <div class="widget-content-left">
+                                                            <div class="widget-heading">Ella-Rose Henry</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-start">Create stunning UIs for your pages with these layout
+                                                components...</td>
+                                            <td>
+                                                <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                            </td>
+                                            <td class="text-end">
+                                                <i class="fa fa-calendar-alt opacity-4 me-2"></i>
+                                                7 Dec
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center" style="width: 78px;">
+                                               <div class="">
+                                                    <input type="checkbox" id="eCheckbox5" class="form-check-input">
+                                                    <label class="form-check-label" for="eCheckbox5">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <td class="text-start ps-1">
+                                                <i class="fa fa-star"></i>
+                                            </td>
+                                            <td>
+                                                <div class="widget-content p-0">
+                                                    <div class="widget-content-wrapper">
+                                                        <div class="widget-content-left me-3">
+                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/5.jpg" alt="">
+                                                        </div>
+                                                        <div class="widget-content-left">
+                                                            <div class="widget-heading">Vinnie Wagstaff</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-start">Etiam sit amet orci eget eros faucibus...</td>
+                                            <td>
+                                                <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                            </td>
+                                            <td class="text-end">
+                                                <i class="fa fa-calendar-alt opacity-4 me-2"></i>
+                                                7 Dec
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center" style="width: 78px;">
+                                                <div class="">
+                                                    <input type="checkbox" id="eCheckbox6" class="form-check-input">
+                                                    <label class="form-check-label" for="eCheckbox6">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <td class="text-start ps-1">
+                                                <i class="fa fa-star"></i>
+                                            </td>
+                                            <td>
+                                                <div class="widget-content p-0">
+                                                    <div class="widget-content-wrapper">
+                                                        <div class="widget-content-left me-3">
+                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/6.jpg" alt="">
+                                                        </div>
+                                                        <div class="widget-content-left">
+                                                            <div class="widget-heading">Alina Mcloughlin</div>
+                                                            <div class="widget-subheading">Last seen online 15 minutes ago</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-start">Nullam dictum felis eu pede mollis pretium.</td>
+                                            <td>
+                                                <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                            </td>
+                                            <td class="text-end">
+                                                <i class="fa fa-calendar-alt opacity-4 me-2"></i>
+                                                5 mins ago
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center" style="width: 78px;">
+                                                <div class="">
+                                                    <input type="checkbox" id="eCheckbox7" class="form-check-input">
+                                                    <label class="form-check-label" for="eCheckbox7">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <td class="text-start ps-1">
+                                                <i class="fa fa-star"></i>
+                                            </td>
+                                            <td>
+                                                <div class="widget-content p-0">
+                                                    <div class="widget-content-wrapper">
+                                                        <div class="widget-content-left me-3">
+                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/7.jpg" alt="">
+                                                        </div>
+                                                        <div class="widget-content-left">
+                                                            <div class="widget-heading">Eliot Huber</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-start">But I must explain to you how all this mistaken idea
+                                                of denouncing pleasure ...</td>
+                                            <td>
+                                                <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                            </td>
+                                            <td class="text-end">
+                                                <i class="fa fa-calendar-alt opacity-4 me-2"></i>
+                                                7 Dec
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center" style="width: 78px;">
+                                               <div class="">
+                                                    <input type="checkbox" id="eCheckbox8" class="form-check-input">
+                                                    <label class="form-check-label" for="eCheckbox8">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <td class="text-start ps-1">
+                                                <i class="fa fa-star"></i>
+                                            </td>
+                                            <td>
+                                                <div class="widget-content p-0">
+                                                    <div class="widget-content-wrapper">
+                                                        <div class="widget-content-left me-3">
+                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/8.jpg" alt="">
+                                                        </div>
+                                                        <div class="widget-content-left">
+                                                            <div class="widget-heading">Eliot Huber</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-start">But I must explain to you how all this mistaken idea
+                                                of denouncing pleasure ...</td>
+                                            <td>
+                                                <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                            </td>
+                                            <td class="text-end">
+                                                <i class="fa fa-calendar-alt opacity-4 me-2"></i>
+                                                7 Dec
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center" style="width: 78px;">
+                                                <div class="">
+                                                    <input type="checkbox" id="eCheckbox9" class="form-check-input">
+                                                    <label class="form-check-label" for="eCheckbox9">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <td class="text-start ps-1">
+                                                <i class="fa fa-star"></i>
+                                            </td>
+                                            <td>
+                                                <div class="widget-content p-0">
+                                                    <div class="widget-content-wrapper">
+                                                        <div class="widget-content-left me-3">
+                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/9.jpg" alt="">
+                                                        </div>
+                                                        <div class="widget-content-left">
+                                                            <div class="widget-heading">Ella-Rose Henry</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-start">Create stunning UIs for your pages with these layout components...</td>
+                                            <td>
+                                                <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                            </td>
+                                            <td class="text-end">
+                                                <i class="fa fa-calendar-alt opacity-4 me-2"></i>
+                                                7 Dec
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="app-inner-layout__bottom-pane d-block text-center">
+                                <nav class="" aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a href="javascript:void(0);" class="page-link"  aria-label="Previous">
+                                                <span aria-hidden="true">«</span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="javascript:void(0);" class="page-link">1</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a href="javascript:void(0);" class="page-link">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="javascript:void(0);" class="page-link">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="javascript:void(0);" class="page-link">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="javascript:void(0);" class="page-link">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="javascript:void(0);" class="page-link" aria-label="Next">
+                                                <span aria-hidden="true">»</span>
+                                                <span class="visually-hidden">Next</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-inner-layout__sidebar card">
+                    <ul class="nav flex-column">
+                        <li class="pt-4 ps-3 pe-3 pb-3 nav-item">
+                            <div class="d-grid">
+                                <button class="btn-pill btn-shadow btn btn-primary">Write New Email</button>
+                            </div>
+                        </li>
+                        <li class="nav-item-header nav-item">My Account</li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon pe-7s-chat"> </i>
+                                <span>Inbox</span>
+                                <div class="ms-auto badge rounded-pill bg-info">8</div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon pe-7s-wallet"> </i>
+                                <span>Sent Items</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon pe-7s-config"></i>
+                                <span>All Messages</span>
+                                <div class="ms-auto badge bg-success">New</div>
+                            </a>
+                        </li>
+                        <li class="nav-item-divider nav-item"></li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon pe-7s-box2"> </i>
+                                <span>Trash</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon pe-7s-coffee"> </i>
+                                <span>Others</span>
+                                <div class="ms-auto badge bg-warning">512</div>
+                            </a>
+                        </li>
+                        <li class="nav-item-divider nav-item"></li>
+                        <li class="nav-item-header nav-item">Online Friends</li>
+                        <li class="text-center p-2 nav-item">
+                            <div>
+                                <div class="avatar-icon-wrapper">
+                                    <div class="badge bg-primary badge-dot badge-dot-lg"></div>
+                                    <div class="avatar-icon">
+                                        <img src="assets/images/avatars/1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="avatar-icon-wrapper">
+                                    <div class="badge bg-focus badge-dot badge-dot-lg"></div>
+                                    <div class="avatar-icon">
+                                        <img src="assets/images/avatars/2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="avatar-icon-wrapper">
+                                    <div class="badge bg-warning badge-dot badge-dot-lg"></div>
+                                    <div class="avatar-icon">
+                                        <img src="assets/images/avatars/3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="avatar-icon-wrapper">
+                                    <div class="badge bg-danger badge-dot badge-dot-lg"></div>
+                                    <div class="avatar-icon">
+                                        <img src="assets/images/avatars/4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="avatar-icon-wrapper">
+                                    <div class="badge bg-info badge-dot badge-dot-lg"></div>
+                                    <div class="avatar-icon">
+                                        <img src="assets/images/avatars/5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="avatar-icon-wrapper">
+                                    <div class="badge bg-success badge-dot badge-dot-lg"></div>
+                                    <div class="avatar-icon">
+                                        <img src="assets/images/avatars/6.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="avatar-icon-wrapper">
+                                    <div class="badge bg-secondary badge-dot badge-dot-lg"></div>
+                                    <div class="avatar-icon">
+                                        <img src="assets/images/avatars/7.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="avatar-icon-wrapper">
+                                    <div class="badge bg-warning badge-dot badge-dot-lg"></div>
+                                    <div class="avatar-icon">
+                                        <img src="assets/images/avatars/8.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item-btn text-center nav-item">
+                            <button class="btn-wide btn-pill btn btn-success btn-sm">Start New Conversation</button>
+                        </li>
+                        <li class="nav-item-divider nav-item"></li>
+                        <li class="nav-item-header nav-item">Tags
+                            <small class="ms-1">Important</small>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" tabindex="0" class="d-flex align-items-center dropdown-item">
+                                <div class="badge ms-0 me-3 badge-dot badge-dot-xl bg-success">Dark</div>
+                                Important
+                            </button>
+                            <button type="button" tabindex="0" class="d-flex align-items-center dropdown-item">
+                                <div class="badge ms-0 me-3 badge-dot badge-dot-xl bg-danger">Dark</div>
+                                Favourites
+                            </button>
+                            <button type="button" tabindex="0" class="d-flex align-items-center dropdown-item">
+                                <div class="badge ms-0 me-3 badge-dot badge-dot-xl bg-warning">Dark</div>
+                                Actions
+                            </button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" tabindex="0" class="d-flex align-items-center dropdown-item">
+                                <div class="badge ms-0 me-3 badge-dot badge-dot-xl bg-primary">Dark</div>
+                                Other Tags
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{> AppFooter/footer }}
+</div>
+{{/ base }}
