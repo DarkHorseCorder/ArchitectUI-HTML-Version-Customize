@@ -3,15 +3,13 @@
   "version": "3.0.0",
   "description": "ArchitectUI - Bootstrap 5 Premium Admin Dashboard Template",
   "author": "DashboardPack.com",
-  "homepage": "https://dashboardpack.com",
   "private": true,
   "scripts": {
     "start": "webpack server",
     "build": "webpack"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dpackdev/architectui-html-pro"
+    "type": "git"
   },
   "eslintConfig": {
     "env": {
